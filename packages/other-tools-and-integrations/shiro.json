@@ -1,0 +1,20 @@
+{
+  "type": "mcp-server",
+  "name": "Shiro",
+  "packageName": "@toolsdk-remote/shiro",
+  "description": "Work on a novel or non-fiction book in Shiro: read scenes and the outline, edit prose, fill characters and places, check continuity and export EPUB. Every change is kept in the project's History. Hosted server; sign in with a free Shiro account via OAuth.",
+  "url": "https://github.com/meetshiro/shiro-mcp",
+  "readme": "https://meetshiro.com/agents/",
+  "runtime": "node",
+  "author": "Shiro",
+  "env": {},
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.meetshiro.com/mcp",
+      "auth": {
+        "type": "oauth2"
+      }
+    }
+  ]
+}
